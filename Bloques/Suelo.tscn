@@ -7,9 +7,9 @@
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="Suelo" type="StaticBody2D"]
+[node name="Suelo" type="StaticBody2D" index="0"]
 
-position = Vector2( 248.829, 264.466 )
+position = Vector2( 246.557, 266.738 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1

@@ -53,6 +53,4 @@ position = Vector2( 816.833, 310.484 )
 
 position = Vector2( 942.36, 215.641 )
 
-[node name="Mario2" parent="." index="12" instance=ExtResource( 2 )]
-
 
