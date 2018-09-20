@@ -1,66 +1,58 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Jugador/MarioScript.gd" type="Script" id=1]
-[ext_resource path="res://Jugador/spritemario.png" type="Texture" id=2]
-[ext_resource path="res://SpriteSuelo.png" type="Texture" id=3]
-
-[sub_resource type="RectangleShape2D" id=1]
-
-custom_solver_bias = 0.0
-extents = Vector2( 17.6255, 12.7027 )
-
-[sub_resource type="RectangleShape2D" id=2]
-
-custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
+[ext_resource path="res://Bloques/Suelo.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Jugador/Jugador.tscn" type="PackedScene" id=2]
 
 [node name="Nivel 1" type="Node" index="0"]
 
-[node name="Mario" type="KinematicBody2D" parent="." index="0"]
+[node name="Suelo" parent="." index="0" instance=ExtResource( 1 )]
 
-position = Vector2( 174.41, 52.906 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-collision/safe_margin = 0.08
-script = ExtResource( 1 )
+position = Vector2( 34.8387, 559.017 )
 
-[node name="SpriteMario" type="Sprite" parent="Mario" index="0"]
+[node name="Mario" parent="." index="1" instance=ExtResource( 2 )]
 
-scale = Vector2( 0.05, 0.05 )
-texture = ExtResource( 2 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 145.866, 202.518 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mario" index="1"]
+[node name="Suelo2" parent="." index="2" instance=ExtResource( 1 )]
 
-position = Vector2( 0, 0.593997 )
-scale = Vector2( 1, 1.85 )
-shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 100.215, 559.096 )
 
-[node name="Suelo" type="StaticBody2D" parent="." index="1"]
+[node name="Suelo3" parent="." index="3" instance=ExtResource( 1 )]
 
-position = Vector2( 327.806, 181.074 )
-scale = Vector2( 10, 0.5 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 165.564, 559.097 )
 
-[node name="Sprite" type="Sprite" parent="Suelo" index="0"]
+[node name="Suelo4" parent="." index="4" instance=ExtResource( 1 )]
 
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 3 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 230.912, 559.097 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Suelo" index="1"]
+[node name="Suelo5" parent="." index="5" instance=ExtResource( 1 )]
 
-position = Vector2( 0.0589372, -3.14801 )
-scale = Vector2( 3.29723, 3.1 )
-shape = SubResource( 2 )
+position = Vector2( 295.773, 559.097 )
+
+[node name="Suelo6" parent="." index="6" instance=ExtResource( 1 )]
+
+position = Vector2( 361.609, 559.097 )
+
+[node name="Suelo7" parent="." index="7" instance=ExtResource( 1 )]
+
+position = Vector2( 427.274, 558.75 )
+
+[node name="Suelo8" parent="." index="8" instance=ExtResource( 1 )]
+
+position = Vector2( 493.249, 558.75 )
+
+[node name="Suelo9" parent="." index="9" instance=ExtResource( 1 )]
+
+position = Vector2( 685.726, 402.538 )
+
+[node name="Suelo10" parent="." index="10" instance=ExtResource( 1 )]
+
+position = Vector2( 816.833, 310.484 )
+
+[node name="Suelo11" parent="." index="11" instance=ExtResource( 1 )]
+
+position = Vector2( 942.36, 215.641 )
+
+[node name="Mario2" parent="." index="12" instance=ExtResource( 2 )]
 
 
