@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SpriteSuelo.jpg-8516eecc83746e8bca57df5d24cf91c4.stex"
+path="res://.import/fireball.png-190e5d374914c85ddc49aeeb4d8bba98.stex"
 
 [deps]
 
-source_file="res://SpriteSuelo.jpg"
-dest_files=[ "res://.import/SpriteSuelo.jpg-8516eecc83746e8bca57df5d24cf91c4.stex" ]
+source_file="res://Fireball/fireball.png"
+dest_files=[ "res://.import/fireball.png-190e5d374914c85ddc49aeeb4d8bba98.stex" ]
 
 [params]
 
